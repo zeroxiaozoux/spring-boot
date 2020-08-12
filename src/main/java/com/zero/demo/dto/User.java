@@ -1,5 +1,6 @@
 package com.zero.demo.dto;
 
+import com.zero.demo.util.BaseParam;
 import lombok.Data;
 
 import javax.validation.constraints.Email;
@@ -10,7 +11,7 @@ import javax.validation.constraints.NotNull;
  * @date 2020/8/3-18:34
  */
 @Data
-public class User {
+public class User  extends BaseParam {
     @NotNull(message = "id 不能为空")
     private  long id;
     @NotNull(message = "name 不能为空")

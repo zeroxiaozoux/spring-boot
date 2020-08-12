@@ -8,4 +8,5 @@ import com.zero.demo.dto.User;
  */
 public interface UserService {
     public  String addUser(User user);
+    public  void addUser2(User user);
 }

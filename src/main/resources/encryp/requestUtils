@@ -1,0 +1,39 @@
+import axios from 'axios';
+import signMd5Utils from "../utils/signMd5Utils"
+// var config = require('../../config')
+//config = process.env.NODE_ENV === 'development' ? config.dev : config.build
+//let apiUrl = config.apiUrl;
+//var qs = require('qs');
+const instance = axios.create({
+    baseURL: 'http://localhost:8080/',
+    // timeout: 1000 * 30,
+    // 允许跨域带token
+    xhrFields: {
+        withCredentials: false
+    },
+    crossDomain: true,
+    emulateJSON: true
+});
+export default instance
+export function signTestPost(query) {
+
+    let url = 'signTest';
+    let sign = signMd5Utils.getSign(url, query);
+    let requestUrl = url + "?sign=" + sign;  //将签名添加在请求参数后面去请求接口
+    return instance({
+        url: requestUrl,
+        method: 'post',
+        data: query
+    })
+}
+export function signTestGet(query) {
+
+    let url = 'signTest';
+    let urlParams = signMd5Utils.urlEncode(query);
+    let sign = signMd5Utils.getSign(url, query);
+    let requestUrl = url + "?sign=" + sign + urlParams;  //将签名添加在请求参数后面去请求接口
+    return instance({
+        url: requestUrl,
+        method: 'get',
+    })
+}

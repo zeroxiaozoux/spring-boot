@@ -14,6 +14,8 @@ public enum  ResultCode {
 
     VALIDATE_FAILED(1002, "参数校验失败"),
 
+    SIGN(2001, "签名错误"),
+
     ERROR(5000, "未知错误");
 
     private int code;

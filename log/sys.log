@@ -1,4 +1,0 @@
-2020-08-04 16:29:07,972 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.968 seconds (JVM running for 2.717)
-2020-08-04 16:29:29,492 INFO (ExceptionControllerAdvice.java:58)- ****** ExceptionControllerAdvice.MethodArgumentNotValidExceptionHandler ******
-2020-08-04 16:31:11,795 INFO (UserController.java:56)- *** getUser2 ****
-2020-08-04 16:31:11,873 INFO (ResponseControllerAdvice.java:32)- ****** ResponseControllerAdvice.beforeBodyWrite ******

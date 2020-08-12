@@ -1,9 +1,0 @@
-2020-08-04 15:59:12,205 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.673 seconds (JVM running for 2.19)
-2020-08-04 16:00:22,653 INFO (UserController.java:43)- *** getUser ****
-2020-08-04 16:12:38,894 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on xyb-zoufenfei with PID 8680 (E:\demo\target\classes started by admin in E:\demo)
-2020-08-04 16:12:38,898 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2020-08-04 16:12:38,899 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
-2020-08-04 16:12:40,264 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 1.76 seconds (JVM running for 2.286)
-2020-08-04 16:15:38,474 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on xyb-zoufenfei with PID 4172 (E:\demo\target\classes started by admin in E:\demo)
-2020-08-04 16:15:38,478 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2020-08-04 16:15:38,479 INFO (SpringApplication.java:646)- No active profile set, falling back to default profiles: default
